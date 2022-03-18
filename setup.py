@@ -10,7 +10,7 @@ base_dir = os.path.dirname(__file__)
 package_dir = os.path.join(os.path.dirname(__file__),'xlutils')
 
 setup(
-    name='suap-xlrd',
+    name='suap-xlutils',
     version=open(os.path.join(base_dir, name, 'version.txt')).read().strip(),
     author='Chris Withers',
     author_email='chris@simplistix.co.uk',
@@ -41,6 +41,15 @@ setup(
             'margins = xlutils.margins:main',
         ],
         },
+    package_data={
+        'xlutils': [
+            '*.txt'
+        ],
+        'xlutils.tests': [
+            '*.txt',
+            '*.xls*'
+        ],
+    },
     extras_require=dict(
         test=[
             'errorhandler',

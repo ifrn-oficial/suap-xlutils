@@ -13,3 +13,4 @@
 pip-selfcheck.json
 /man
 *.egg-info
+.idea
